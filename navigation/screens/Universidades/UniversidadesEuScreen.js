@@ -4,8 +4,7 @@ import { Button, Card, Title } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import { useFonts } from "expo-font";
 
-const UniversidadesEuScreen = ({navigation}) => {
-
+const UniversidadesEuScreen = ({ navigation }) => {
   let [loaded] = useFonts({
     Abril: require("../../../assets/Fonts/AbrilFatface-Regular.ttf"),
     Russo: require("../../../assets/Fonts/RussoOne-Regular.ttf"),
@@ -31,11 +30,11 @@ const UniversidadesEuScreen = ({navigation}) => {
           }}
         >
           <Title style={{ textAlign: "center", margin: 5 }}>
-          Universidad Harvard.
+            Universidad Harvard.
           </Title>
           <Card.Cover
             source={{
-              uri: "https://laregionenlinea.com.mx/wp-content/uploads/UAG-otorga-Beca-Honoris-Causa.jpg",
+              uri: "https://epc-ucb.edu.bo/epc/images/harvard/c16194787837b42a12568419833c514b.jpg",
             }}
             style={{}}
           ></Card.Cover>
@@ -58,19 +57,17 @@ const UniversidadesEuScreen = ({navigation}) => {
           }}
         >
           <Title style={{ textAlign: "center", margin: 5 }}>
-          Universidad de Oxford.
+            Universidad de Oxford.
           </Title>
           <Card.Cover
             source={{
-              uri: "https://www.poblanerias.com/wp-content/archivos/2016/07/UPAEP-CAMPUS_032.jpg",
+              uri: "https://th.bing.com/th/id/R.6585cc4eb01e85f667f9c2d1daf3df9e?rik=%2bzy5mlcvfPw9lg&pid=ImgRaw&r=0",
             }}
             style={{}}
           ></Card.Cover>
           <Card.Actions>
             <Button
-              onPress={() =>
-                navigation.navigate("Universidad2Eu")
-              }
+              onPress={() => navigation.navigate("Universidad2Eu")}
               style={{ width: "100%" }}
             >
               <Text style={{ color: "#EE627E", textAlign: "center" }}>Ver</Text>
@@ -87,19 +84,17 @@ const UniversidadesEuScreen = ({navigation}) => {
           }}
         >
           <Title style={{ textAlign: "center", margin: 5 }}>
-          Universidad de Cambridge
+            Universidad de Cambridge
           </Title>
           <Card.Cover
             source={{
-              uri: "https://th.bing.com/th/id/R.b52b097b1dbd112dbe2e04987a1f5665?rik=cvYOPIRkpgubzw&riu=http%3a%2f%2fsic.cultura.gob.mx%2fimages%2f47967&ehk=rZNv1z1AOtCCDJncnbSInB4VjN1zaqNNvp3GL%2bPEvZA%3d&risl=&pid=ImgRaw&r=0",
+              uri: "https://th.bing.com/th/id/R.b01282e4d11880a5630c53db4165f7f8?rik=JYwGxHbWrfMfEQ&pid=ImgRaw&r=0",
             }}
             style={{}}
           ></Card.Cover>
           <Card.Actions>
             <Button
-              onPress={() =>
-                navigation.navigate("Universidad3Eu")
-              }
+              onPress={() => navigation.navigate("Universidad3Eu")}
               style={{ width: "100%" }}
             >
               <Text style={{ color: "#EE627E", textAlign: "center" }}>Ver</Text>

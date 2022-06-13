@@ -221,7 +221,7 @@ const Universidad1Screen = () => {
           <List.Item title="Excelencia Académica" />
           <List.Item title="Examen General de Conocimientos" />
           <List.Item title="Tesis" />
-          <List.Item title="Desarrollo de unvestigación" />
+          <List.Item title="Desarrollo de investigación" />
         </List.Accordion>
 
         <View style={styles.container}>

@@ -12,15 +12,12 @@ import {
 } from "react-native-table-component";
 
 const CONTENT = {
-  tableHead: ["Beca académica", "Beca socioeconómica"],
+  tableHead: ["Beca ordinaria"],
   tableData: [
-    ["Ser estudiante de la AUG", "Ser estudiante de la AUG"],
-    ["Tener promedio de 8 en adelante", "Tener promedio de 8 en adelante"],
-    ["Llenar la solicitud", "Llenar la solicitud"],
-    [
-      "Comprobante de ingresos personales y de tutores, con historial academico",
-      "Comprobante de ingresos personales y de tutores, con comprobante de domicilio",
-    ],
+    ["Ser estudiante de la UPAEP"],
+    ["Entrevista y sellado en una fecha marcada"],
+    ["Segunda entrevista con el director"],
+    ["Solicitud de la beca"],
   ],
 };
 
@@ -276,7 +273,7 @@ const Universidad2Screen = () => {
           <List.Item title="Excelencia Académica" />
           <List.Item title="Examen General de Conocimientos" />
           <List.Item title="Tesis" />
-          <List.Item title="Desarrollo de unvestigación" />
+          <List.Item title="Desarrollo de investigación" />
         </List.Accordion>
 
 

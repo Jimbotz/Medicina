@@ -4,6 +4,8 @@ import { Card, List, Title } from "react-native-paper";
 import { StatusBar } from "expo-status-bar";
 import { useFonts } from "expo-font";
 import { Video } from "expo-av";
+import * as Linking from "expo-linking";
+import * as WebBrowser from "expo-web-browser";
 
 const OportunidadesScreen = ({ navigation }) => {
   const video = React.useRef(null);
@@ -124,15 +126,17 @@ const OportunidadesScreen = ({ navigation }) => {
           resizeMode="contain"
           isLooping
         />
-
-        <Video
-          ref={video3}
-          style={{ width: "100%", height: 200, marginTop: 10 }}
-          source={require("../../assets/videos/Entrevista_2.mp4")}
-          useNativeControls
-          resizeMode="contain"
-          isLooping
-        />
+        <View style={{marginHorizontal:20, marginBottom:10, marginTop: 10}}>
+          <Button
+            title="Ver entrevistas"
+            color={"#EE627E"}
+            onPress={() =>
+              Linking.openURL(
+                "https://photos.google.com/share/AF1QipOSumZug9MhHn760U2svUDdmFNNLh-ba-JfWl06vHavnCGi9aS19BLXQNucaGgbAA?key=Q05vZ1NRZFlTdUVYUWJxeHVHa0F4QWpVVHYwVlN3"
+              )
+            }
+          />
+        </View>
       </ScrollView>
     </View>
   );
